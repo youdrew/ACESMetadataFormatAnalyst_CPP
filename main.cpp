@@ -8,7 +8,4 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
     return a.exec();
-
-    // this is a push from QTcreator.test2
-    // 第四次测试
 }
