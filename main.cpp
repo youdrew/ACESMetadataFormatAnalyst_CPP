@@ -9,5 +9,6 @@ int main(int argc, char *argv[])
     w.show();
     return a.exec();
 
-    // this is a push from QTcreator.test
+    // this is a push from QTcreator.test2
+    // ;)
 }
