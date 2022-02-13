@@ -10,5 +10,5 @@ int main(int argc, char *argv[])
     return a.exec();
 
     // this is a push from QTcreator.test2
-    // ;)
+    // 第四次测试
 }
