@@ -1,25 +1,29 @@
 #include "parseamf.h"
 #include "mainwindow.h"
+
 #include <QtDebug>
 #include <QFile>
 #include <QDomDocument>
 #include <QApplication>
 #include <iostream>
+#include <QString>
 
-ParseAMF::ParseAMF()
+ParseAMF::ParseAMF(QString Path)
 {
-    QFile file("D:/project/CTL/demo2/test.xml");
-    // 以只读方式打开
+    QDomDocument doc(Path);
+    QFile file(Path);
+
+    // 以只读方式打开    
     if (!file.open(QIODevice::ReadOnly))
-    QDomDocument Qdoc;
-    if (!Qdoc.setContent(&file))
-    {
+        return;
+    if (!doc.setContent(&file)) {
         file.close();
+        return;
     }
     file.close();
 
     //根据标签名tagname(aces:amfInfo),来检索amf文件中的内容，将结果以list(node形式的)的形式返回
-    QDomNodeList aNodeList = Qdoc.elementsByTagName("aces:amfInfo");
+    QDomNodeList aNodeList = doc.elementsByTagName("aces:amfInfo");
 
 
     if(!aNodeList.isEmpty()){

@@ -3,12 +3,13 @@
 
 #include <iostream>
 #include <string>
+#include <QString>
 
 class ParseAMF
 {
 public:
     ParseAMF();
-    ParseAMF(std::string Path);
+    ParseAMF(QString);
 
     void PrintAllAmfInfo();             //用于测试输出private里面amf的信息是否检测到了，用于debug用。
 
