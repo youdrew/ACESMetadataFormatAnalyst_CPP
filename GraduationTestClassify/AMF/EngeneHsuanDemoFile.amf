@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<aces:acesMetadataFile xmlns:aces="urn:ampas:aces:amf:v1.0" xmlns:cdl="urn:ASC:CDL:v1.01" xsi:schemaLocation="urn:ampas:aces:amf:v1.0 file:acesMetadataFile.xsd" version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <aces:amfInfo>
+        <aces:description>This .amf file is used for the presentation of my graduation work and contains as much information as possible.</aces:description>
+        <aces:author>
+            <aces:name>EngeneHsuan</aces:name>
+            <aces:emailAddress>youdrewxuan@icloud.com</aces:emailAddress>
+        </aces:author>
+        <aces:dateTime>
+            <aces:creationDateTime>2020-01-21T09:30:29.53Z</aces:creationDateTime>
+            <aces:modificationDateTime>2020-01-21T09:30:29.53Z</aces:modificationDateTime>
+        </aces:dateTime>
+        <aces:uuid>urn:uuid:797c7cd8-4eb1-4f67-afce-1234567890ab</aces:uuid>
+    </aces:amfInfo>
+    <aces:clipId/>
+    <aces:pipeline>
+        <aces:pipelineInfo>
+            <aces:description>The information of this pipeline is used for converting a LogC Picture to a Rec.709 look.</aces:description>
+            <aces:author>
+                <aces:name>EngeneHsuan</aces:name>
+                <aces:emailAddress>youdrewxuan@icloud.com</aces:emailAddress>
+            </aces:author>
+            <aces:dateTime>
+                <aces:creationDateTime>2022-05-18T09:28:56.57Z</aces:creationDateTime>
+                <aces:modificationDateTime>2022-05-18T09:28:56.57Z</aces:modificationDateTime>
+            </aces:dateTime>
+            <aces:systemVersion>
+                <aces:majorVersion>1</aces:majorVersion>
+                <aces:minorVersion>2</aces:minorVersion>
+                <aces:patchVersion>0</aces:patchVersion>
+            </aces:systemVersion>
+        </aces:pipelineInfo>
+        <aces:inputTransform applied="true">
+            <aces:description>ACES 1.0 Input - ARRI V3 LogC (EI800)</aces:description>
+            <aces:transformId>urn:ampas:aces:transformId:v1.5:IDT.ARRI.Alexa-v3-logC-EI800.a1.v2</aces:transformId>
+        </aces:inputTransform>
+        <aces:outputTransform>
+            <aces:referenceRenderingTransform>
+                <aces:description>ACES 1.0 - RRT</aces:description>
+                <aces:transformId>urn:ampas:aces:transformId:v1.5:RRT.a1.0.3</aces:transformId>
+            </aces:referenceRenderingTransform>
+            <aces:outputDeviceTransform>
+                <aces:description>ACES 1.0 Output - Rec.709</aces:description>
+                <aces:transformId>urn:ampas:aces:transformId:v1.5:ODT.Academy.Rec709_100nits_dim.a1.0.3</aces:transformId>
+            </aces:outputDeviceTransform>
+        </aces:outputTransform>
+    </aces:pipeline>
+</aces:acesMetadataFile>
