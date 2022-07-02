@@ -63,7 +63,7 @@ for more infomation.
 
 ## ACES Metadata Format Analyst 
 ACES Metadata Format Analyst is an open source project designed for color artists. We want to create a simple AMF analysis and processing GUI tool, with lightweight, and run on Mac and Win systems.
-
+![Demo](Demo.gif)
 It has the following functions **under development**:
 
 + **Analyze the content of the AMF file** and display in a tabular, highly readable manner.
