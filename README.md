@@ -1,5 +1,5 @@
 # About the project and the developer
-I'm Hsuan, the project is my graduate work. This project was originally written in Python (original project [here](https://github.com/youdrew/ACES_Metadata_Format_Analyst)), but given the use of OCIO and some image processing features, I had to migrate the whole project to C++. I just learned C++ not long ago and I don't use it very well, so please pardon me if some of the code is not very efficient.
+I'm Hsuan, the project is my graduate work. This project was originally written in Python (original project [here](https://github.com/youdrew/ACES_Metadata_Format_Analyst)), but given the use of OCIO and some image processing features, I had to migrate the whole project to C++. I just learned C++ not long ago and I don't use it very well, so please pardon me if some of the code is not very efficient. Thanks to [Liao Chuang](https://github.com/LChuang621), I got a lot of help from him during the coding.
 
 &nbsp; 
 
