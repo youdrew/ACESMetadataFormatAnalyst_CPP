@@ -1,3 +1,5 @@
+
+
 # About the project and the developer
 I'm Hsuan, the project is my graduate work. This project was originally written in Python (original project [here](https://github.com/youdrew/ACES_Metadata_Format_Analyst)), but given the use of OCIO and some image processing features, I had to migrate the whole project to C++. I just learned C++ not long ago and I don't use it very well, so please pardon me if some of the code is not very efficient. Thanks to [Liao Chuang](https://github.com/LChuang621), I got a lot of help from him during the coding.
 
@@ -23,8 +25,6 @@ Related Projects：
 
 &nbsp; 
 
-&nbsp; 
-
 
 ## ACES's background knowledge
 [ACES](https://acescentral.com/) is a global standard for interchanging digital image files, managing color workflows and creating masters for delivery and archiving.
@@ -36,7 +36,8 @@ It is a combination of [SMPTE](https://www.smpte.org/) standards, best practices
 
 &nbsp; 
 
-&nbsp; 
+&nbsp;
+
 
 
 
@@ -56,7 +57,7 @@ for more infomation.
 
 &nbsp; 
 
-&nbsp; 
+&nbsp;
 
 
 
@@ -87,8 +88,6 @@ It has the following functions **under development**:
 
 &nbsp; 
 
-&nbsp; 
-
 
 ## Problems with the current version
 My ability is limited, I welcome developers to see here to improve this software with me. My best regards.
@@ -99,4 +98,4 @@ My ability is limited, I welcome developers to see here to improve this software
 + The module of `scatter.cpp` for displaying 3D LUT uses the QT tool `Q3DScatter` module, but it canot display colored 3D points. My current idea is to instantiate each point and give each its own color (this might make the software less efficient).
 + [CTLrender is not yet able to handle LMT](https://github.com/pomfort/amf-util/issues/5), so this problem exists in this software as well.
 + The image rendering pipeline uses the [amf-util](https://github.com/pomfort/amf-util) project of [ptrpfn](https://github.com/ptrpfn), which requires a mix of C++ and python, and modifies a bit the original [ptrpfn](https://github.com/ptrpfn) source code by removing the “click" header part. I also did a parse way for rendering pipeline, but that parse way may not be very reliable, as you can see in the source code `std::string usingctlrender(ParseAMF);` which is my own rendering pipeline.
-+ Considering that `amf-util` is not stable, so I wrote a parsing method by myself. so when importing a file of .amf, it actually did two renderings (4 times in total) which improves the stability in disguise, i.e. if one pipeline is does not working, there has another one, if you want to close one of them, you can search ` parseamf.cpp` to delate`RenderPic_Whenconstruct(Path);` or search `amfanalyst.cpp` to delate `c1->usingctlrender(amf_file1); `. amfutil(python) uses the `system()` way So when it runs, the system needs to wait. My pipeline uses QT to run in the background without waiting, which can be used as a remedy.
++ Considering that `amf-util` is not stable, so I wrote a parsing method by myself. so when importing a file of .amf, it actually did two renderings (4 times in total) which improves the stability in disguise, i.e. if one pipeline is does not working, there has another one, if you want to close one of them, you can search ` parseamf.cpp` to delete\`RenderPic_Whenconstruct(Path);\` or search `amfanalyst.cpp` to delete `c1->usingctlrender(amf_file1);`. amfutil(python) uses the `system()` way So when it runs, the system needs to wait. My pipeline uses QT to run in the background without waiting, which can be used as a remedy.
